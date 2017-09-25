@@ -1,0 +1,29 @@
+---
+
+jboss_java_pkg_name: java-1.8.0-openjdk-devel
+install_java: true
+
+jboss_fuse_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=41311
+jboss_fuse_artifact_name: jboss-fuse-karaf-6.3.0.redhat-187.zip
+#jboss-fuse-karaf-6.3.0.redhat-187.zip
+jboss_fuse_name: jboss-fuse-karaf-6.3.0.redhat-187
+#jboss-fuse-full-6.2.1.redhat-084
+
+jboss_fuse_user: jboss-fuse
+
+jboss_fuse_version: 6.2
+
+jboss_fuse_users:
+  -
+    password: redhat
+    roles:
+      - Administrator
+    username: admin
+  -
+    password: guest
+    roles:
+      - viewer
+    username: guest
+
+# Override the default method. See https://github.com/rhtconsulting/jboss_eap/blob/master/README.md
+transfer_method: copy-from-controller  #csp-to-host | copy-from-controller | file-server-to-host
