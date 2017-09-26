@@ -11,7 +11,7 @@
 #   - name: "rhn_password"
 #     prompt: "Enter Your Red Hat Customer Portal Password"
 #     private: yes
-- hosts: all
+- hosts: fuse
 
   roles:
   - jboss_common
