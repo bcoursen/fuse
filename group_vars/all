@@ -4,9 +4,9 @@ jboss_java_pkg_name: java-1.8.0-openjdk-devel
 install_java: true
 
 jboss_fuse_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=41311
-jboss_fuse_artifact_name: jboss-fuse-karaf-6.3.0.redhat-187.zip
+jboss_fuse_artifact_name: jboss-fuse-6.2.1.redhat-084.zip
 #jboss-fuse-karaf-6.3.0.redhat-187.zip
-jboss_fuse_name: jboss-fuse-karaf-6.3.0.redhat-187
+jboss_fuse_name: jboss-fuse-6.2.1.redhat-084
 #jboss-fuse-full-6.2.1.redhat-084
 
 jboss_fuse_user: jboss-fuse
