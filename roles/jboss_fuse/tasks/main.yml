@@ -146,5 +146,5 @@
 
 - name: Start Fuse in server mode
   command: /opt/jboss-fuse/jboss-fuse-6.2.1.redhat-084/bin/start
-  # async: 30
-  # poll: 0
+  async: 30
+  poll: 0
