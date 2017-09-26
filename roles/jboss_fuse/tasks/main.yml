@@ -38,7 +38,7 @@
 
 - name: Set JBoss Fuse Service Directories Facts
   set_fact:
-    jboss_fuse_home: "{{ jboss_fuse_library_dest }}/jboss-fuse-6.3.0.redhat-187"
+    jboss_fuse_home: "{{ jboss_fuse_library_dest }}/jboss-fuse-karaf-6.3.0.redhat-187"
   tags:
     - jboss_fuse
 
@@ -51,7 +51,7 @@
 - name: Check Existence of Libraries
   become: true
   stat:
-    path: "{{ jboss_fuse_library_dest + '/jboss-fuse-6.3.0.redhat-187/etc/org.apache.karaf.features.cfg'}}"
+    path: "{{ jboss_fuse_library_dest + '/jboss-fuse-karaf-6.3.0.redhat-187/etc/org.apache.karaf.features.cfg'}}"
   register: jboss_fuse_exists
   tags:
     - jboss_fuse
@@ -109,7 +109,8 @@
   unarchive:
     src: "{{ jboss_fuse_artifact_dl_dest }}"
     dest: "{{ jboss_fuse_library_dest }}"
-    creates: jboss-fuse-6.2.1.redhat-084
+    creates: jboss-fuse-karaf-6.3.0.redhat-187
+    #creates: jboss-fuse-6.2.1.redhat-084
     copy: no
     owner: "{{ jboss_fuse_user }}"
     group: "{{ jboss_fuse_group }}"
